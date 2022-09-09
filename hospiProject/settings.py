@@ -73,6 +73,8 @@ REST_FRAMEWORK = {
             )
 }
 
+AUTH_USER_MODEL = 'hospiApp.User'
+
 ROOT_URLCONF = 'hospiProject.urls'
 
 TEMPLATES = [
