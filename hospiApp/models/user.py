@@ -14,7 +14,7 @@ class UserManager(BaseUserManager):
         return user
 
 class User(AbstractBaseUser, PermissionsMixin):
-    username = models.CharField('Username', max_length = 15, unique=True)
+    username = models.CharField('Username', max_length = 15, unique=True,primary_key=True)
     password = models.CharField('Password', max_length = 256)
     perfil = models.CharField('Perfil', max_length= 15)
     name = models.CharField('Nombre', max_length = 30)
