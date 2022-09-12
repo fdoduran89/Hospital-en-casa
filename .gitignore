@@ -4,3 +4,4 @@ hospiApp/migrations/__pycache__
 hospiApp/models/__pycache__
 hospiApp/serializers/__pycache__
 hospiApp/views/__pycache__
+hospiProject/__pycache__
