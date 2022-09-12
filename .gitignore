@@ -1,1 +1,6 @@
 env
+hospiApp/__pycache__
+hospiApp/migrations/__pycache__
+hospiApp/models/__pycache__
+hospiApp/serializers/__pycache__
+hospiApp/views/__pycache__
