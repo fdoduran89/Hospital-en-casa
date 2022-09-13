@@ -23,4 +23,5 @@ urlpatterns = [
     path('user/', views.UserCreateView.as_view()),
     path('psalud/', views.CrearPersonalsaludView.as_view()),
     path('paciente/', views.CrearPacienteView.as_view()),
+    path('familiar/', views.FamiliarCreateView.as_view()),
 ]
