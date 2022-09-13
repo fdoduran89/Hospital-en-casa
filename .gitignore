@@ -6,3 +6,4 @@ hospiApp/serializers/__pycache__
 hospiApp/views/__pycache__
 hospiProject/__pycache__
 hospiApp/migrations
+.idea
