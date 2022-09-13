@@ -1,0 +1,63 @@
+Index: hospiApp/serializers/pacienteSerializer.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hospiApp/serializers/pacienteSerializer.py b/hospiApp/serializers/pacienteSerializer.py
+new file mode 100644
+--- /dev/null	
++++ b/hospiApp/serializers/pacienteSerializer.py	
+@@ -0,0 +1,7 @@
++from hospiApp.models.paciente import Pacientes
++from rest_framework import serializers
++
++class PacienteSerializer(serializers.ModelSerializer):
++    class Meta:
++        model = Pacientes
++        fields = ['id_paciente','id_psalud','username','city','birthday']
+\ No newline at end of file
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+new file mode 100644
+--- /dev/null	
++++ b/main.py	
+@@ -0,0 +1,16 @@
++# This is a sample Python script.
++
++# Press Mayús+F10 to execute it or replace it with your code.
++# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
++
++
++def print_hi(name):
++    # Use a breakpoint in the code line below to debug your script.
++    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
++
++
++# Press the green button in the gutter to run the script.
++if __name__ == '__main__':
++    print_hi('PyCharm')
++
++# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+Index: hospiApp/models/psalud.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hospiApp/models/psalud.py b/hospiApp/models/psalud.py
+new file mode 100644
+--- /dev/null	
++++ b/hospiApp/models/psalud.py	
+@@ -0,0 +1,8 @@
++from django.db import models
++from .user import User
++
++class Personalsalud (models.Model):
++    id_psalud = models.AutoField (primary_key=True)
++    username = models.ForeignKey(User, related_name='psalud', on_delete=models.CASCADE)
++    rol = models.CharField('Rol',max_length=35)
++    especialidad = models.CharField('Especialidad',max_length=35)
+\ No newline at end of file
