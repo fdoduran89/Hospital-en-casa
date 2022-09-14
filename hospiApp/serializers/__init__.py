@@ -1,3 +1,4 @@
 from .userSerializer import UserSerializer
 from .pacienteSerializer import PacienteSerializer
 from .psaludSerializer import PersonalsaludSerializer 
+from .familiarSerializer import FamiliarSerializer
