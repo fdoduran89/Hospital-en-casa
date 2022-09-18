@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "corsheaders.middleware.CorsMiddleware",
+
 ]
 
 REST_FRAMEWORK = {
@@ -74,6 +75,7 @@ REST_FRAMEWORK = {
             'DEFAULT_AUTHENTICATION_CLASSES': (
                 'rest_framework_simplejwt.authentication.JWTAuthentication',
             )
+
 }
 
 AUTH_USER_MODEL = 'hospiApp.User'
