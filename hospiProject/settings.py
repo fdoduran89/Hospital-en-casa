@@ -107,10 +107,10 @@ WSGI_APPLICATION = 'hospiProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd13s8pc3ljcgfl',
-        'USER': 'yqawmqnidicfem',
-        'PASSWORD': '00beb1909f91e601ea1fcf3d8c8b1fe8593584a5e754b098c8b6a4cc36e505c3',
-        'HOST': 'ec2-44-210-36-247.compute-1.amazonaws.com',
+        'NAME': 'devq543t30frkv',
+        'USER': 'astiazynnjlqqk',
+        'PASSWORD': '99bb3058450ca4a9f92c28f3d1af4f77953bd57bfa0086993c1cb06cc070b11f',
+        'HOST': 'ec2-54-147-36-107.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
